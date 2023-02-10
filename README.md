@@ -71,7 +71,7 @@ python ./start.py
 ```
 
 If you see the figure as follow, you are success.
-![image](https://github.com/zerowind168/SIMUROSOT-ROBOCHALLENGE/blob/master/roboc.png) 
+![image](https://github.com/m-saeid/The_Last_of_Us/blob/main/city.png) 
 ## 4. File Explain 
 ### 4.1 The file structure 
 
