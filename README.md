@@ -1,4 +1,4 @@
-# The_Last_of_Us
+# The_Last_of_Us 2023
 Artificial intelligence and robotics competition, SIMUROSOT ROBO CHANLLENGE ,The Last of Us 2023
 
 # Q/A
@@ -16,7 +16,7 @@ OS: ubuntu 16.04
 ROS: Kinectic
 
 OS:
-#### : It is strongly recommended not to install the OS on a(any) Virtual Machinet. Because it may cause problems.
+note : It is strongly recommended not to install the OS on a(any) Virtual Machinet. Because it may cause problems.
 
 ROS:
 You can go to:  http://wiki.ros.org/kinetic/Installation/Ubuntu
@@ -68,3 +68,35 @@ python ./start.py 1 1
 
 If you see the figure as follow, you are success.
 ![image](https://github.com/zerowind168/SIMUROSOT-ROBOCHALLENGE/blob/master/roboc.png) 
+## 4. File Explain 
+### 4.1 The file structure 
+
+./ros_scripts<br>
+├── how_to_run.py<br>
+├── robot.py<br>
+├── start.py<br>
+└── world.world<br>
+
+## 4.2 detail explain for the file
+#### 1. start.py
+This is the start-up script. When it is running, it will start all the necessary program. After start, the Turtlebot will act according to what defined in the how_to_run.py script.
+#### 2. how_to_run.py
+This script define how the turtlebot act. There is only one function `Run` in this script, The function has a `robot` parameter, which is an object of class `Robot`. In this object, some act are define for manipulate the Turtlebot. The `start.py` script will be called by start-up script, and also tranfer the `robot` object.
+
+#### 3. robot.py
+The script define a `Robot` class, which wrap some basic function for the manipulation of turtlebot.
+
+set_move_speed(met_per_sec)　: Set the speed of turtlebot，dimension is m/s.
+
+set_turn_speed(deg_per_sec)　: Set the rotate speed of turtlebot, dimension is degree/s.
+
+go_forward(seconds)　　　　 : Let the turtlebot move for `seconds` seconds at the given speed.
+
+turn_around(seconds)　　　　: Let the turtlebot turn around for `seconds` seconds at the given rotate speed.
+
+get_image()　　　　　　　　: Get the current image from camera. The image contain the RGB information as a 2D matrix.
+#### 4. world.world
+This file define the enviroment which include play field and obstacles. It will be called by "start.py" script. We have defined some more testing enviroment in the `world` sub-directory. You can use them for testing. 
+
+## 4.3 More to do
+The given demo is really simple for beginners to start up. You can define more sophisticate function based on `robot.move_cmd` and `robot.turn_cmd` to set. And using `robot.cmd_vel.publish(robot.move_cmd)` to publish you manipulation. Such as simulatanious turn around and moving.
