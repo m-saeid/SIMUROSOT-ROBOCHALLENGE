@@ -15,10 +15,11 @@ OS: ubuntu 16.04
 
 ROS: Kinectic
 
-OS:
+--------
+### OS
 note : It is strongly recommended not to install the OS on a(any) Virtual Machinet. Because it may cause problems.
 
-ROS:
+### ROS:
 You can go to:  http://wiki.ros.org/kinetic/Installation/Ubuntu
 for how to download the ROS Kinetic version.<br>
 Here we copy some of the proceed below:<br>
