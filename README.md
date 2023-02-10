@@ -11,7 +11,7 @@ Feel free to ask questions
 
 This is the The Last of Us 2023 competition: Simurosot RoboChallenge Simulation Platform
 
-OS: ubuntu 16.04
+OS: ubuntu 16.04<br>
 note : It is strongly recommended not to install the OS on a(any) Virtual Machinet. Because it may cause problems.
 
 ROS: Kinectic
