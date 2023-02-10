@@ -12,14 +12,13 @@ Feel free to ask questions
 This is the The Last of Us 2023 competition: Simurosot RoboChallenge Simulation Platform
 
 OS: ubuntu 16.04
+note : It is strongly recommended not to install the OS on a(any) Virtual Machinet. Because it may cause problems.
 
 ROS: Kinectic
 
 --------
-### OS
-note : It is strongly recommended not to install the OS on a(any) Virtual Machinet. Because it may cause problems.
 
-### ROS:
+## 1. ROS:
 You can go to:  http://wiki.ros.org/kinetic/Installation/Ubuntu
 for how to download the ROS Kinetic version.<br>
 Here we copy some of the proceed below:<br>
@@ -60,11 +59,15 @@ sudo apt-get install ros-kinetic-turtlebot-gazebo
 ## 3. SIMUROSOT-ROBOCHALLENGE
 ### 3.1 Download this project
 ### 3.2 Add the modles
-In your home directory, Press Ctrl+H to show the hidden directory, then go to gazebo/models sub-directory. Copy the colorbox, models/newbox and models/newfield to this directory.
+To create access. Terminal:
+```
+sudo nautilus
+```
+go to Compuetr => /usr/share/gazebo-7/models sub-directory. Copy the all models(folders) in the models folder of this repository to this directory(/usr/share/gazebo-7/models).
 
 ### 3.3 Run the program <br>
 ```
-python ./start.py 1 1
+python ./start.py
 ```
 
 If you see the figure as follow, you are success.
@@ -76,6 +79,7 @@ If you see the figure as follow, you are success.
 ├── how_to_run.py<br>
 ├── robot.py<br>
 ├── start.py<br>
+├── detect_face.py<br>
 └── world.world<br>
 
 ## 4.2 detail explain for the file
@@ -96,8 +100,10 @@ go_forward(seconds)　　　　 : Let the turtlebot move for `seconds` seconds a
 turn_around(seconds)　　　　: Let the turtlebot turn around for `seconds` seconds at the given rotate speed.
 
 get_image()　　　　　　　　: Get the current image from camera. The image contain the RGB information as a 2D matrix.
-#### 4. world.world
+#### 4. detect_face.py
+This file is for detecting face images in the images received from the camera sensor.
+#### 5. world.world
 This file define the enviroment which include play field and obstacles. It will be called by "start.py" script. We have defined some more testing enviroment in the `world` sub-directory. You can use them for testing. 
 
 ## 4.3 More to do
-The given demo is really simple for beginners to start up. You can define more sophisticate function based on `robot.move_cmd` and `robot.turn_cmd` to set. And using `robot.cmd_vel.publish(robot.move_cmd)` to publish you manipulation. Such as simulatanious turn around and moving.
+The given demo is simple for beginners to start up. You can define more sophisticate function based on `robot.move_cmd` and `robot.turn_cmd` to set. And using `robot.cmd_vel.publish(robot.move_cmd)` to publish you manipulation. Such as simulatanious turn around and moving.
