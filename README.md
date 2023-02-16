@@ -8,6 +8,12 @@ Feel free to ask questions
   # SIMUROSOT ROBO CHANLLENGE 
 
 --------
+# Tutorials, simulator environment models and rules:
+https://drive.google.com/drive/folders/15u1_yyYWXcLnS4ySjulXfdNjZMhOPSgv?usp=share_link
+
+--------
+
+
 
 This is the The Last of Us 2023 competition: Simurosot RoboChallenge Simulation Platform
 
