@@ -73,7 +73,7 @@ go to Compuetr => /usr/share/gazebo-7/models sub-directory. Copy the all models(
 
 ### 3.3 Run the program <br>
 ```
-python ./start.py
+python ./start.py 5 2
 ```
 
 If you see the figure as follow, you are success.
