@@ -1,5 +1,6 @@
 # The_Last_of_Us 2023
 Artificial intelligence and robotics competition, SIMUROSOT ROBO CHANLLENGE ,The Last of Us 2023
+![image](https://github.com/m-saeid/SIMUROSOT-ROBOCHALLENGE/blob/main/The%20Last%20of%20Us.jpeg) 
 
 # Q/A
 Feel free to ask questions
@@ -78,6 +79,7 @@ python ./start.py 5 2
 
 If you see the figure as follow, you are success.
 ![image](https://github.com/m-saeid/The_Last_of_Us/blob/main/city.png) 
+
 ## 4. File Explain 
 ### 4.1 The file structure 
 
