@@ -2,7 +2,7 @@
 Artificial intelligence and robotics competition, SIMUROSOT ROBO CHANLLENGE ,The Last of Us 2023
 ![image](https://github.com/m-saeid/SIMUROSOT-ROBOCHALLENGE/blob/main/The%20Last%20of%20Us.jpeg) 
 
-![Watch the video](https://github.com/m-saeid/SIMUROSOT-ROBOCHALLENGE/4. Example.mp4)
+![Watch the video](https://github.com/m-saeid/SIMUROSOT-ROBOCHALLENGE/blob/main/4.%20Example.mp4)
 
 
 # Q/A
