@@ -5,7 +5,7 @@ Artificial intelligence and robotics competition, SIMUROSOT ROBO CHANLLENGE ,The
 
 # Q/A
 Feel free to ask questions
-   im.saeid2@gmail.com
+   imm.saeid@gmail.com
    
   # SIMUROSOT ROBO CHANLLENGE 
 
